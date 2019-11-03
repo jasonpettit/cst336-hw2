@@ -7,7 +7,17 @@ h2 {
     text-decoration: underline;
 }
 
+h4 {
+    font-size: 1em !important;
+}
+
 hr {  
-  border: 10px solid grey !important;
+  border: 6px solid grey !important;
   border-radius: 5px;
+}
+
+footer {
+    background-color: grey;
+    color: white;
+    text-align: center;
 }
