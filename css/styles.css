@@ -1,0 +1,13 @@
+p, li {
+    font-size: 1.25em;
+}
+
+h2 {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+hr {  
+  border: 10px solid grey !important;
+  border-radius: 5px;
+}
