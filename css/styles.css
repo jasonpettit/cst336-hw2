@@ -1,5 +1,10 @@
-p, li {
+p {
     font-size: 1.25em;
+}
+
+li {
+    font-size: 1.25em;
+    font-style: italic
 }
 
 h2 {
@@ -57,5 +62,30 @@ input num {
 }
 
 td {
-    color: red;
+    color: white;
+}
+
+.container {
+    column-count: 1;
+}
+
+.card1 {
+  background-color: white;
+  border: 2px solid rgb(79, 185, 227);
+  padding: 10px;
+  margin: 0 0 1em 0;
+}
+
+.card2 {
+  background-color: rgb(207, 232, 220);
+  border: 2px solid rgb(79, 185, 227);
+  padding: 10px;
+  margin: 0 0 1em 0;
+}
+
+.card3 {
+  background-color: grey;
+  border: 2px solid rgb(79, 185, 227);
+  padding: 10px;
+  margin: 0 0 1em 0;
 }
