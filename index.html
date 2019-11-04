@@ -5,9 +5,6 @@
         <title>CST336-HW2 PETTIT: Mad Lib</title>
         <link href="css/styles.css" rel="stylesheet" type="text/css"/>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-        <script src="js/hw2.js"></script>
-    
     </head>
     
     <body>
@@ -32,6 +29,7 @@
         </ul>
         <hr>
         
+        <!-- WORD ENTRY FORM -->
         <center><table>
         <TR><TD ALIGN=RIGHT><h4>Adjective: </TD><TD><input type="text" id="w1" class="adj"></h4></TD></TR>
         <TR><TD ALIGN=RIGHT><h4>Adjective: </TD><TD><input type="text" id="w2" class="adj"></h4></TD></TR>        
@@ -53,9 +51,18 @@
         <TR><TD ALIGN=RIGHT><h4>Number: </TD><TD><input type="text" id="w18" class="num"></h4></TD></TR>              
         <TR><TD ALIGN=RIGHT><h4>Plural Noun: </TD><TD><input type="text" id="w19" id="pnoun"></h4></TD></TR>
         </table>
+        <!-- END WORD ENTRY FORM -->
+        
         <br>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Let's Go!</a></p>
+        <button id="go" class="btn btn-primary btn-lg">Let's Go!</button>
         </center>
+        
+        <br><br><div id="madLib"></div>
+        
+        <center>
+        <input type="reset" id='playAgain' class='btn btn-primary btn-lg' value="Play Again!">
+        </center>
+
       </div>
       </div>
       
@@ -64,6 +71,10 @@
             <strong>Disclaimer:</strong> The information on this webpage is fictitious.<br/>
             It is used for academic purposes only.<br/><br/>
       </footer>
+      
+      <!-- EXTERNAL JAVASCRIPT FILE -->  
+      <script src="js/hw2.js"></script>
+      
     </body>
 </html>
 

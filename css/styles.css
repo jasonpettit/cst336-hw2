@@ -22,26 +22,30 @@ footer {
     text-align: center;
 }
 
-input adj{
+input adj {
     
 }
 
-input noun{
+input noun {
     
 }
 
-input pnoun{
+input pnoun {
+    
+}
+ 
+input other {
     
 }
 
-input other{
+input ing {
     
 }
 
-input ing{
+input num {
     
 }
 
-input num{
-    
+td {
+    color: red;
 }
