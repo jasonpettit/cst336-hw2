@@ -5,6 +5,8 @@ var playAgainButton = document.querySelector('#playAgain');
 playAgainButton.style.display = 'none';
 
 var madLib = function(){
+    go.style.display = 'none';
+    
     var madLib = document.getElementById("madLib");
     var w1 = document.getElementById("w1").value;
     var w2 = document.getElementById("w2").value;
@@ -26,17 +28,24 @@ var madLib = function(){
     var w18 = document.getElementById("w18").value;
     var w19 = document.getElementById("w19").value;
     
-    madLib.innerHTML = "A vacation is when you take a trip to some <b>" + w1 +
-    "</b> place with your <b>" + w2 + "</b> family.  Usually you go to some place that is near a/an <b>" +
-    w3 + "</b> or up on a/an <b>" + w4 + "</b>. A good vacation place is one where you can ride <b>" +
-    w5 + "</b> or play <b>" + w6 + "</b> or go hunting for <b>" + w7 + "</b>.  I like to spend my time <b>" +
-    w8 + "</b> or <b>" + w9 + "</b>. When parents go on a vacation, they spend their time eating <b>" +
-    "</b> three <b>" + w10 + "</b> a day, and fathers play golf, and mothers sit around <b>" + w11 +
-    "</b>. Last summer, my little brother fell in a/an <b>" + w12 + "</b> and got poison <b>" + w13 +
-    "</b> all over his <b>" + w14 + "</b> My family is going to go to (the) <b>" + w15 + "</b>, and I will<b>" +
-    "</b> practice <b>" + w16 + "</b> Parents need vacations more than kids because parents are always<b>" +
-    "</b> very <b>" + w17 + "</b> and because they have to work <b>" + w18 + "</b> hours every day all year <b>" +
-    "</b> making enough <b>" + w19 + "</b> to pay for the vacation."
+    madLib.innerHTML = "A vacation is when you take a trip to some <adj>" + w1 +
+    "</adj> place with your <adj>" + w2 + "</adj> family.  Usually you go to some place that is near a/an <noun>" +
+    w3 + "</noun> or up on a/an <noun>" + w4 + "</noun>. A good vacation place is one where you can ride <pnoun>" +
+    w5 + "</pnoun> or play <other>" + w6 + "</other> or go hunting for <pnoun>" + w7 + "</pnoun>.  I like to spend my time <ing>" +
+    w8 + "</ing> or <ing>" + w9 + "</ing>. When parents go on a vacation, they spend their time eating " +
+    " three <pnoun>" + w10 + "</pnoun> a day, and fathers play golf, and mothers sit around <ing>" + w11 +
+    "</ing>. Last summer, my little brother fell in a/an <noun>" + w12 + "</noun> and got poison <other>" + w13 +
+    "</other> all over his <other>" + w14 + "</other> My family is going to go to (the) <other>" + w15 + "</other>, and I will " +
+    "practice <ing>" + w16 + "</ing>. Parents need vacations more than kids because parents are always " +
+    "very <adj>" + w17 + "</adj> and because they have to work <other>" + w18 + "</other> hours every day all year " +
+    "making enough <pnoun>" + w19 + "</pnoun> to pay for the vacation."
+    
+    playAgain.style.display = 'inline';
+    playAgain.addEventListener('click', resetGame);
 };
+
+function resetGame(){
+    location.reload();
+}
 
 go.addEventListener('click', madLib)
